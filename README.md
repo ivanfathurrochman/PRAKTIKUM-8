@@ -43,37 +43,37 @@ def no_data():
 
 def tambah():
    
-   os.system("cls")
+    os.system("cls")
    
-   b = data_mhsw()
+    b = data_mhsw()
    
-   print("TAMBAH DATA")
+    print("TAMBAH DATA")
   
-  print("------------")
+    print("------------")
   
-  b.nama = (input("Nama Mahasiswa\t: "))
+    b.nama = (input("Nama Mahasiswa\t: "))
   
-  b.nim = (int(input("NIM Mahasiswa\t: ")))
+    b.nim = (int(input("NIM Mahasiswa\t: ")))
   
-  b.tugas = (int(input("Nilai Tugas\t: ")))
+    b.tugas = (int(input("Nilai Tugas\t: ")))
    
-   b.uts = (int(input("Nilai UTS\t: ")))
+    b.uts = (int(input("Nilai UTS\t: ")))
    
-   b.uas = (int(input("Nilai UAS\t: ")))
+    b.uas = (int(input("Nilai UAS\t: ")))
+    
+    b.akhir = (b.tugas*30/100) + (b.uts*35/100) + (b.uas*35/100) 
    
-   b.akhir = (b.tugas*30/100) + (b.uts*35/100) + (b.uas*35/100) 
+    data.append(b)
    
-   data.append(b)
-   
-   print()
+    print()
 
 def lihat():
    
-   os.system("cls")
+    os.system("cls")
   
-  if len(data) <=0:
+    if len(data) <=0:
    
-   no_data()     
+    no_data()     
   
   else:
    
@@ -100,11 +100,11 @@ def lihat():
 def hapus():
        
        os.system("cls")
-      
-      if len(data) <=0:
+       
+       if len(data) <=0:
             no_data()
      
-     else:
+       else:
         
         nama = data_mhsw()
           
@@ -176,14 +176,20 @@ while Loop:
         Loop = False
         
   ## Penjelasan
-        Untuk memanggil fungsi dengan nama "os".
+  ### Untuk memanggil fungsi dengan nama "os".
 
 import os
-Membuat class data_mhsw dengan atributnya, yaitu nama, nim, tugas, uts dan uas.
+
+### membuat class data_mhsw dengan atributnya, yaitu nama, nim, tugas, uts dan uas.
 
 class data_mhsw:
-    nama=""
-    nim=""
-    tugas=""
-    uts=""
-    uas=""
+   
+   nama=""
+  
+   nim=""
+  
+   tugas=""
+  
+   uts=""
+   
+   uas=""
