@@ -174,3 +174,16 @@ while Loop:
     elif tanya=="k" or tanya=="K":
         print("Program Selesai")
         Loop = False
+        
+  ## Penjelasan
+        Untuk memanggil fungsi dengan nama "os".
+
+import os
+Membuat class data_mhsw dengan atributnya, yaitu nama, nim, tugas, uts dan uas.
+
+class data_mhsw:
+    nama=""
+    nim=""
+    tugas=""
+    uts=""
+    uas=""
