@@ -193,3 +193,20 @@ class data_mhsw:
    uts=""
    
    uas=""
+
+### Membuat variable data = [] untuk menampung list dari data_mhsw.
+
+### Membuat fungsi tambahan, jika diperlukan fungsi tersebut akan dipanggil oleh program.
+
+def no_data():
+   
+   print("DAFTAR NILAI MAHASISWA")
+   
+   print("----------------------")
+   
+   print()
+   
+   print(" - TIDAK ADA DATA - ")
+   
+   print()
+   
