@@ -210,3 +210,33 @@ def no_data():
    
    print()
    
+   Menambah data ( tambah() )
+
+### Menginput nim, nama, nilai tugas, nilai uts dan nilai uas.
+
+Data yang telah diinput akan ditambahkan ke dalam variable data.
+
+def tambah():
+ 
+ os.system("cls")
+
+   b = data_mhsw()
+
+   print("TAMBAH DATA")
+   
+   print("------------")
+
+   b.nama = (input("Nama Mahasiswa\t: "))
+
+   b.nim = (int(input("NIM Mahasiswa\t: ")))
+
+   b.tugas = (int(input("Nilai Tugas\t: ")))
+
+   b.uts = (int(input("Nilai UTS\t: ")))
+ 
+   b.uas = (int(input("Nilai UAS\t: ")))
+
+   b.akhir = (b.tugas*30/100) + (b.uts*35/100) + (b.uas*35/100) 
+    data.append(b)
+    print()
+   
